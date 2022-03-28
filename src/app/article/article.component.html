@@ -1,0 +1,19 @@
+<div class="article">
+<div class="article-right" *ngIf="article">
+<p-galleria [value]="article.images" [responsiveOptions]="responsiveOptions" [containerStyle]="{'width': '650px', 'background': '#fff'}" [numVisible]="5"
+[circular]="true" [showItemNavigators]="true"> 
+<ng-template pTemplate="item" let-item>
+    <img [src]="item" class="article-thumbnail" />
+</ng-template>
+<ng-template pTemplate="thumbnail" let-item>
+    <div class="grid grid-nogutter justify-content-center">
+        <img [src]="item" style="display: block; width: 100px; height: 70px;" />
+    </div>
+</ng-template>
+</p-galleria>
+</div>
+<div class="article-left">
+    <h2>{{article.name}}</h2>
+    
+</div>
+</div>

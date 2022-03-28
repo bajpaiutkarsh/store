@@ -76,7 +76,7 @@
       </nav> -->
 
 
-      <header>
+      <!-- <header>
         <div class="margin-bottom-0 d-flex flex-column flex-md-row align-items-center pb-3 border-bottom margin-bottom-0">
           <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
             <span class="fs-4">DELREINA</span>
@@ -103,4 +103,67 @@
           <li><a href="#" class="nav-link px-2 link-dark">Veils & Accessories</a></li>
         </ul>
   
-    </div>
+    </div> -->
+
+    <!-- <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fa fa-bars"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto mr-md-3">
+            <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Accessories</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Shop</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            <li class="dropdown nav-item d-md-flex align-items-center">
+              <a href="#" class="dropdown-toggle nav-link d-flex align-items-center justify-content-center icon-cart p-0" id="dropdown04" data-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-shopping-cart"></i>
+                <b class="caret"></b>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown04">
+                <a href="#" class="dropdown-item">Action</a>
+                <a href="#" class="dropdown-item">Another action</a>
+                <a href="#" class="dropdown-item">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Separated link</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">One more separated link</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+
+    <nav class="nav">
+      <div class="container">
+          <div class="logo">
+              <a href="#">Your Logo</a>
+          </div>
+          <div id="mainListDiv" class="main_list" [ngClass]="{ 'show_list block_display': navbarOpen }">
+              <ul class="navlinks">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </div>
+          <span class="navTrigger" [ngClass]="{ 'active': navbarOpen }" (click)="toggleClass()">
+              <i></i>
+              <i></i>
+              <i></i>
+          </span>
+      </div>
+  </nav>
+  <!-- <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        
+  
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 margin-auto">
+      <li><a href="#" class="nav-link px-2 link-secondary">All Collections</a></li>
+      <li><a href="#" class="nav-link px-2 link-dark">Veils & Accessories</a></li>
+    </ul>
+
+</div>  -->

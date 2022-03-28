@@ -7,8 +7,12 @@ import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { BannerComponent } from './banner/banner.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {CarouselModule} from 'ngx-bootstrap/carousel';
+import {CarouselModule} from 'primeng/carousel';
 import { ProductComponent } from './product/product.component';
+import { HttpClientModule } from'@angular/common/http';
+import { ArticleComponent } from './article/article.component'
+import {GalleriaModule} from 'primeng/galleria'
+import {RatingModule} from 'primeng/rating'
 
 @NgModule({
   declarations: [
@@ -16,13 +20,17 @@ import { ProductComponent } from './product/product.component';
     HomeComponent,
     NavigationComponent,
     BannerComponent,
-    ProductComponent
+    ProductComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     BrowserAnimationsModule,
-    CarouselModule.forRoot()
+    CarouselModule,
+    GalleriaModule,
+    RatingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
