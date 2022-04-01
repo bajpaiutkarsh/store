@@ -50,6 +50,7 @@ export class ProductComponent implements OnInit {
 export interface Product{
   id: string;
   name: string;
+  description: string;
   category: string;
   vendor: Vendor[];
   rating: number;
