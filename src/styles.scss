@@ -64,6 +64,18 @@ header{
       width: 90vw;
     }
   }
+
+  @media (min-width: 1400px) {
+    .container {
+        max-width: 1300px !important;
+    }
+}
+.block_display{
+    display: block !important;
+}
+header{
+    margin: 0px !important;
+}
 .card{
     border: none !important;
 }
