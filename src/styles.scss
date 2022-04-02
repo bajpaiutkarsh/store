@@ -1,20 +1,22 @@
 
-/* Importing Bootstrap SCSS file. */
-@import "~bootstrap/scss/bootstrap";
-
-/* Importing Datepicker SCSS file. */
-@import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
 
 /* You can add global styles to this file, and also import other style files */
 .content{
     display: flex;
-    width: 100%;
+    width: 90%;
     margin: auto;
+    flex-wrap: wrap;
+    gap: 2vw 2vw;
+}
+.margin-bottom-2{
+    margin-bottom: 2%;
 }
 .item-child{
     display: flex;
     align-self: center;
     margin: auto;
+    width: 100%;
+    justify-content: center;
 }
 .bottom-border{
     border-radius: 5px;
@@ -42,4 +44,88 @@ header{
 }
 .margin-auto{
     margin: auto;
+}
+.content-cards{
+    display: flex;
+    width: calc(80vw / 4);
+    margin: auto;
+    flex-direction: row;
+    
+}
+.none-float{
+    float: none !important;
+}
+.main-banner{
+    padding-top: 200px !important;
+}
+@media (max-width: 800px) {
+    .content-cards {
+      flex-direction: column;
+      width: 90vw;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .container {
+        max-width: 1300px !important;
+    }
+}
+.block_display{
+    display: block !important;
+}
+header{
+    margin: 0px !important;
+}
+.card{
+    border: none !important;
+}
+.line-height2{
+    color: #000 !important;
+    line-height: 85px !important;
+}
+.card-body{
+    align-items: center;
+    margin: auto;
+}
+.article-thumbnail{
+    display: block;
+  max-width:650px;
+  max-height:650px;
+  width: auto;
+  height: auto;
+}
+.p-galleria-thumbnail-container{
+    background-color: #fff !important;
+    color: #000 !important;
+}
+.article{
+    display: flex;
+    width: 90vw;
+}
+.article-right{
+    display: flex;
+    width: 50vw;
+}
+.article-left{
+    display: flex;
+    width: 50vw;
+}
+
+.links{
+    font-weight: 600;
+    font-size: 15px;
+    color: #2a2a2a;
+    cursor: pointer;
+    text-transform: capitalize;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    height: 40px;
+    line-height: 40px;
+    border: transparent;
+    letter-spacing: 1px;
+}
+.links:hover{
+    color: #aaa;
 }

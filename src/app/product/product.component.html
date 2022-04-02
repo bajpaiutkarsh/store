@@ -1,1 +1,88 @@
-<p>product works!</p>
+<!-- <div class="card" *ngFor= "let article of articles" style="width: 18rem;">
+    <img class="card-img-top" [src]="article.images[0]" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div> -->
+<!-- 
+  <div class="content" >
+      <div class="content-cards" *ngFor= "let article of articles" >
+    <div class="card" (click)="navigateToArticle(article)" (mouseover)="article.active=true" (mouseout)="article.active=false" >
+      <div *ngIf="article.active; then gallary else image"></div>
+      <ng-template #image> 
+        <img #cardimage class="card-img-top" [src]="article.images[0]" alt="Card image cap"> 
+        </ng-template>
+        <ng-template #gallary> 
+          <p-galleria [value]="article.images"[responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '640px', 'margin-top':'2em'}" [numVisible]="5"
+    [circular]="true"  [autoPlay]="true" [transitionInterval]="1000" [showThumbnails]="false" [showIndicators]="true" [showItemNavigatorsOnHover]="true"
+    [showIndicatorsOnItem]="true"> 
+    <ng-template pTemplate="item" let-item>
+        <img [src]="item" style="width: 100%; display: block;" />
+    </ng-template>
+    <ng-template pTemplate="thumbnail" let-item>
+        <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item" style="display: block;" />
+        </div>
+    </ng-template>
+</p-galleria></ng-template>
+        <div class="card-body">
+          <div class="item-child"><span class="fst-italic">{{article.name}}</span></div>
+          <div class="item-child"><span class="fst-italic">{{article.category}}</span></div>
+          <div class="item-child"><span class="fst-italic">{{article.vendor[0].price+' '+ article.vendor[0].region}}</span></div>
+
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <section class="section" id="article">
+   
+    <div class="content" >
+      <div class="content-cards" *ngFor= "let article of articles" >
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                                <ul>
+                                    <li><a (click)="navigateToArticle(article)"><i class="fa fa-eye"></i></a></li>
+                                    <li><a href="single-product.html"><i class="fa fa-star"></i></a></li>
+                                    <li><a href="single-product.html"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <div  (click)="navigateToArticle(article)" (mouseover)="article.active=true" (mouseout)="article.active=false">
+                            <div *ngIf="article.active; then gallary else image"></div>
+                            <ng-template #image> 
+                              <img #cardimage class="card-img-top" [src]="article.images[0]" alt="Card image cap"> 
+                              </ng-template>
+                              <ng-template #gallary> 
+                                <p-galleria [value]="article.images"[responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '640px', 'margin-top':'2em'}" [numVisible]="5"
+                          [circular]="true"  [autoPlay]="true" [transitionInterval]="1000" [showThumbnails]="false" 
+                          [showIndicatorsOnItem]="true"> 
+                          <ng-template pTemplate="item" let-item>
+                              <img [src]="item" style="width: 100%; display: block;" />
+                          </ng-template>
+                          <ng-template pTemplate="thumbnail" let-item>
+                              <div class="grid grid-nogutter justify-content-center">
+                                  <img [src]="item" style="display: block;" />
+                              </div>
+                          </ng-template>
+                      </p-galleria></ng-template>
+                    </div>
+                        </div>
+                        <div class="down-content">
+                            <h4>{{article.name}}</h4>
+                            <span>{{article.vendor[0].price+' '+ article.vendor[0].region}}</span>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                        </div>
+                        </div>
+                       
+                       </div></div>
+                       
+                        </section>
+
