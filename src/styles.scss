@@ -111,3 +111,21 @@ header{
     width: 50vw;
 }
 
+.links{
+    font-weight: 600;
+    font-size: 15px;
+    color: #2a2a2a;
+    cursor: pointer;
+    text-transform: capitalize;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    height: 40px;
+    line-height: 40px;
+    border: transparent;
+    letter-spacing: 1px;
+}
+.links:hover{
+    color: #aaa;
+}

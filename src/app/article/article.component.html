@@ -20,6 +20,11 @@
 
 <section class="section" id="product">
     <div class="container">
+        <div class="row margin-bottom-2">
+            <div class="col-lg-12">
+                <a class="links">Back to home</a> | <span class="links">{{article.name}}</span>
+            </div>
+        </div>
         <div class="row">
             <div class="col-lg-6">
             <div class="left-images" *ngIf="article">
@@ -60,7 +65,7 @@
                     </div>
                 </div>
                 <div class="total">
-                    <h4>Total: $210.00</h4>
+                    <h4>Total: {{article.vendor[0].price+' '+ article.vendor[0].region}}</h4>
                     <div class="main-border-button"><a href="#">Add To Cart</a></div>
                 </div>
             </div>

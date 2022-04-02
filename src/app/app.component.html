@@ -32,10 +32,11 @@
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav" [ngClass]="{ 'block_display': navbarOpen }">
-                        <li class="scroll-to-section"><a href="#top" class="active">Wishlist</a></li>
-                        <li class="scroll-to-section"><a href="#men">Cart</a></li>
+                        <li class="scroll-to-section"><a [routerLink]="['/']" class=""><i class="fa fa-home fa-lg"></i> Home</a></li>
+                        <li class="scroll-to-section"><a [routerLink]="['/']" ><i class="fa fa-heart"></i> Wishlist</a></li>
+                        <li class="scroll-to-section"><a href="#men"><i class="fa fa-shopping-cart"></i> Cart</a></li>
                         <li class="submenu">
-                            <a href="javascript:;">Jane Doe</a>
+                            <a href="javascript:;"><i class="fa fa-gear"></i>  Jane Doe</a>
                             <ul>
                                 <li><a href="about.html">Your Orders</a></li>
                                 <li><a href="products.html">Settings</a></li>
@@ -67,8 +68,7 @@
 
 <div class="main-banner" id="top">
 <div [ngClass]="{ 'd-none': navbarOpen }">
-<app-banner></app-banner>
-<div class="margin-bottom-2"></div>
+
 <router-outlet></router-outlet>
 </div>
 </div>
@@ -85,7 +85,8 @@
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                 </div>
             </div>
